@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wedding_scrapers"
+version = "0.1.0"
+description = "wedding-scrapers using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.28.8"}
+
+[tool.poetry.scripts]
+wedding_scrapers = "wedding_scrapers.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

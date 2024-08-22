@@ -1,0 +1,21 @@
+scrape_provider_details:
+  description: >-
+    For each provided URL in {urls}, scrape the website to gather detailed information about 
+    the wedding service provider. Focus on extracting the following specific data points.
+    - Full name
+    - Bio/Description about the service provider
+    - Type of service
+    - Location (city and state)
+    - Contact information (phone, email, website)
+    - Social media links (Instagram only)
+    - Price range
+    Collect as much relevant data as possible, ensuring to capture all available information for each field. Try to find price link, follow it to extract price information. Be aware of that the service provider are in Bavaria, so if you find locations outside of Bavaria, please ignore them.
+  expected_output: >-
+    Raw scraped data for each service provider, including all available relevant information 
+    structured according to the specified fields.
+
+structure_data:
+  description: >-
+    Take the raw scraped data and structure it
+  expected_output: >-
+    A list of ServiceProviderDetails JSON objects
